@@ -38,29 +38,33 @@
     <div class="code-examples">
         <div>
             <h3>Antes (com Data Clumps)</h3>
-            <pre><code class="language-java">
-// Exemplo em Java
+            <pre>
+                <code class="language-java">
+        // Exemplo em Java
 
-void printClient(String name, String street, String city, String zip) {
-    System.out.println(name + " - " + street + ", " + city + " - " + zip);
-}
-</code></pre>
-        </div>
+        void printClient(String name, String street, String city, String zip) {
+            System.out.println(name + " - " + street + ", " + city + " - " + zip);
+        }
+                </code>
+           </pre>
+    </div>
         <div>
             <h3>Depois (refatorado)</h3>
-            <pre><code class="language-java">
-// Exemplo em Java
+            <pre>
+                <code class="language-java">
+        // Exemplo em Java
 
-class Address {
-    String street, city, zip;
-    // construtor e métodos
-}
+        class Address {
+            String street, city, zip;
+            // construtor e métodos
+        }
 
-void printClient(String name, Address address) {
-    System.out.println(name + " - " + address.street + ", " + address.city + " - " + address.zip);
-}
-</code></pre>
-        </div>
+        void printClient(String name, Address address) {
+            System.out.println(name + " - " + address.street + ", " + address.city + " - " + address.zip);
+        }
+                </code>
+            </pre>
+       </div>
     </div>
 </section>
 
